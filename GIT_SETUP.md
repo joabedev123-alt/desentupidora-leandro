@@ -22,90 +22,34 @@ d:\Leandro - Desentupidora/
 └── images/             # Pasta para imagens
 ```
 
-## 🌐 Conectar com GitHub/GitLab/Bitbucket
+## 🌐 Conectar com GitHub (JÁ CONFIGURADO)
 
-### Opção 1: GitHub
+Este projeto já está conectado ao repositório:
+**https://github.com/joabedev123-alt/desentupidora-leandro**
 
-#### 1. Criar Repositório no GitHub
-1. Acesse: https://github.com/new
-2. Nome do repositório: `desentupidora-sul-rs`
-3. **NÃO** marque "Initialize with README"
-4. Clique em "Create repository"
+### Para enviar atualizações (Push)
 
-#### 2. Conectar o Repositório Local
+O repositório já está configurado. Para enviar suas atualizações, basta rodar:
 
 ```bash
-# Adicionar o remote (substitua SEU_USUARIO pelo seu username)
-git remote add origin https://github.com/SEU_USUARIO/desentupidora-sul-rs.git
-
-# Renomear branch para main (se preferir)
-git branch -M main
-
-# Fazer push inicial
-git push -u origin main
-```
-
-#### 3. Comandos para Push Futuro
-
-```bash
-# Verificar mudanças
-git status
-
-# Adicionar arquivos modificados
-git add .
-
-# Criar commit
-git commit -m "Descrição das mudanças"
-
-# Enviar para GitHub
 git push
 ```
 
----
-
-### Opção 2: GitLab
-
-#### 1. Criar Projeto no GitLab
-1. Acesse: https://gitlab.com/projects/new
-2. Nome: `desentupidora-sul-rs`
-3. Visibilidade: Private ou Public
-4. **NÃO** marque "Initialize with README"
-5. Clique em "Create project"
-
-#### 2. Conectar Repositório
+Se você criar novos arquivos ou fizer mudanças, siga o fluxo padrão:
 
 ```bash
-# Adicionar remote
-git remote add origin https://gitlab.com/SEU_USUARIO/desentupidora-sul-rs.git
+# 1. Verificas mudanças
+git status
 
-# Renomear branch (opcional)
-git branch -M main
+# 2. Adicionar tudo
+git add .
 
-# Push inicial
-git push -u origin main
+# 3. Salvar versão (Commit)
+git commit -m "Descreva suas mudanças aqui"
+
+# 4. Enviar para o GitHub
+git push
 ```
-
----
-
-### Opção 3: Bitbucket
-
-#### 1. Criar Repositório no Bitbucket
-1. Acesse: https://bitbucket.org/repo/create
-2. Nome: `desentupidora-sul-rs`
-3. **NÃO** marque "Add README"
-4. Clique em "Create repository"
-
-#### 2. Conectar Repositório
-
-```bash
-# Adicionar remote
-git remote add origin https://bitbucket.org/SEU_USUARIO/desentupidora-sul-rs.git
-
-# Push inicial
-git push -u origin master
-```
-
----
 
 ## 🔐 Autenticação
 

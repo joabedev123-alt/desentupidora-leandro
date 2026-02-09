@@ -17,16 +17,14 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 
-    // Hide/show header based on scroll direction
+    // Hide/show header logic
+    // REQUEST: Hide when scrolling down, show ONLY when back at the top
     if (currentScroll <= 0) {
         // At the top - show header
         header.classList.remove('header-hidden');
-    } else if (currentScroll > lastScroll && currentScroll > 100) {
-        // Scrolling down & past 100px - hide header
+    } else {
+        // Scrolled down (any amount) - hide header
         header.classList.add('header-hidden');
-    } else if (currentScroll < lastScroll) {
-        // Scrolling up - show header
-        header.classList.remove('header-hidden');
     }
 
     lastScroll = currentScroll;

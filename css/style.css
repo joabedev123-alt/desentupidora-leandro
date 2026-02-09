@@ -111,7 +111,7 @@ a {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; REMOVED to allow manual spacing */
     padding: 1.25rem 0;
     position: relative;
 }
@@ -140,6 +140,15 @@ a {
 
 .logo-text .highlight {
     color: var(--electric-blue);
+}
+
+.btn-desktop {
+    display: inline-flex;
+    margin-left: auto;
+}
+
+.btn-mobile {
+    display: none;
 }
 
 .nav {
@@ -1075,6 +1084,16 @@ a {
         transform: translateX(100%);
         transition: var(--transition-normal);
         border-bottom: 1px solid rgba(0, 102, 255, 0.2);
+    }
+
+    .btn-desktop {
+        display: none;
+    }
+
+    .btn-mobile {
+        display: inline-flex;
+        width: 100%;
+        margin-top: 1rem;
     }
 
     .nav.active {
