@@ -126,7 +126,7 @@ a {
 }
 
 .logo-image {
-    height: 60px;
+    height: 90px;
     width: auto;
     border-radius: 8px;
     transition: var(--transition-normal);
@@ -142,14 +142,9 @@ a {
     color: var(--electric-blue);
 }
 
-.btn-desktop {
-    display: inline-flex;
-    margin-left: auto;
-}
+/* Button styles moved to avoid override */
 
-.btn-mobile {
-    display: none;
-}
+/* Button styles moved */
 
 .nav {
     display: flex;
@@ -216,6 +211,17 @@ a {
     position: relative;
     overflow: hidden;
     transition: var(--transition-normal);
+}
+
+/* Visibility Control - Placed after .btn to ensure override */
+.btn-desktop {
+    display: inline-flex;
+    margin-left: auto;
+}
+
+.btn-mobile {
+    display: none !important;
+    /* Force hide on desktop */
 }
 
 .btn-primary {
